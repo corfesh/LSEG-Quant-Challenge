@@ -4,9 +4,31 @@ LSEG Challenge - ESGEM.FGI Price Prediction
 > [!NOTE] 
 > For a comprehensive understanding, see our detailed documentation available [here](https://github.com/corfesh/LSEG-Quant-Challenge/blob/main/LSEG%20Challenge%20Report.pdf). This overview serves as a starting point.
 
+## Table of contents
+<!-- TOC -->
+* [Discover the world of Quant](#discover-the-world-of-quant)
+  * [Exploratory Data Analysis](#exploratory-data-analysis)
+    * [Time series line plot](#time-series-line-plot)
+    * [Correlation Heatmap](#correlation-heatmap)
+  * [Challenges Regarding Data](#challenges-regarding-data)
+    * [Missing Data](#missing-data)
+    * [Public Holiday](#public-holiday)
+    * [Outliers](#outliers)
+  * [Data Cleaning](#data-cleaning)
+    * [Similar Rows](#similar-rows)
+    * [Weekend Days](#weekend-days-)
+    * [Missing Days](#missing-days)
+    * [Resolve Obvious Outliers](#resolve-obvious-outliers)
+    * [Wrong Net Values](#wrong-net-values)
+  * [Implemented Models](#implemented-models)
+    * [1. ARIMA](#1-arima)
+    * [2. XGBoost](#2-xgboost)
+    * [3. LSTM](#3-lstm)
+<!-- TOC -->
+
 ## Exploratory Data Analysis
 
-### **Time series line plot**
+### Time series line plot
 
 Shows the close, open, low and high prices over time. We can see right away that there is a sudden drop in close price in 2021-02, but comparing the plots side by side, it is clear that the low value those days was actually higher, implying that there were some errors. We can also notice missing data in the 'Open', 'Low', and 'High' columns.
 
